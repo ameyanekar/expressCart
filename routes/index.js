@@ -862,8 +862,8 @@ router.post('/product/addreview', async (req, res, next) => {
         }
 
         // Sanitize inputs
-        req.body.title = stripHtml(req.body.title);
-        req.body.description = stripHtml(req.body.description);
+        // req.body.title = stripHtml(req.body.title);
+        // req.body.description = stripHtml(req.body.description);
 
         // Validate length
         if(req.body.title.length > 50){
